@@ -1,0 +1,210 @@
+{
+    "filename": "data.json",
+    "collections": [
+        {
+            "name": "bookings",
+            "data": [
+                {
+                    "name": "wenxuan",
+                    "numTickets": 2,
+                    "email": "adsdsah@qq.com",
+                    "team": "Avengers",
+                    "message": "hello, I am wenxuan!",
+                    "agree": "on",
+                    "payment": "Paypal",
+                    "meta": {
+                        "revision": 0,
+                        "created": 1633317566652,
+                        "version": 0
+                    },
+                    "$loki": 1
+                },
+                {
+                    "name": "fdsf",
+                    "numTickets": 2,
+                    "email": "hello@asdsad.com",
+                    "team": "JLA",
+                    "superhero": "Flash",
+                    "message": "hello, I am fdsf!",
+                    "agree": "on",
+                    "payment": "Paypal",
+                    "meta": {
+                        "revision": 0,
+                        "created": 1633923823113,
+                        "version": 0
+                    },
+                    "$loki": 2
+                },
+                {
+                    "name": "hasdih",
+                    "numTickets": 3,
+                    "email": "hello@qq.com",
+                    "team": "JLA",
+                    "superhero": "Wonder Woman",
+                    "message": "hello, I am hasdih!",
+                    "agree": "on",
+                    "Pay Method": "Credit Card",
+                    "meta": {
+                        "revision": 0,
+                        "created": 1634528966563,
+                        "version": 0
+                    },
+                    "$loki": 3
+                },
+                {
+                    "name": "heloo",
+                    "numTickets": 2,
+                    "email": "hello@dsa.com",
+                    "team": "JLA",
+                    "superhero": "Flash",
+                    "message": "hello, I am heloo!",
+                    "agree": "on",
+                    "Pay Method": "Credit Card",
+                    "meta": {
+                        "revision": 0,
+                        "created": 1634529478704,
+                        "version": 0
+                    },
+                    "$loki": 4
+                },
+                {
+                    "name": "tuihou",
+                    "numTickets": 3,
+                    "email": "hello@outlook.com",
+                    "team": "Avengers",
+                    "superhero": "Thor",
+                    "message": "hello, I am tuihou!",
+                    "agree": "on",
+                    "payment": "Paypal",
+                    "meta": {
+                        "revision": 0,
+                        "created": 1634529725257,
+                        "version": 0
+                    },
+                    "$loki": 5
+                },
+                {
+                    "name": "showmaker",
+                    "numTickets": 3,
+                    "email": "showmaker@qq.com",
+                    "team": "Avengers",
+                    "superhero": "Black Widow",
+                    "message": "hello, I am showmaker, I defeat FPX!",
+                    "agree": "on",
+                    "payment": "Paypal",
+                    "meta": {
+                        "revision": 0,
+                        "created": 1635129401268,
+                        "version": 0
+                    },
+                    "$loki": 6
+                },
+                {
+                    "name": "hello2",
+                    "numTickets": 2,
+                    "email": "hello@gmail.com",
+                    "team": "JLA",
+                    "superhero": "Green Lantern",
+                    "message": "hello, I am Green Lantern!",
+                    "agree": "on",
+                    "Pay Method": "Credit Card",
+                    "meta": {
+                        "revision": 0,
+                        "created": 1635129863407,
+                        "version": 0
+                    },
+                    "$loki": 14
+                },
+                {
+                    "name": "then",
+                    "numTickets": 3,
+                    "email": "then@foxmail.com",
+                    "team": "Avengers",
+                    "superhero": "Hulk",
+                    "message": "HULK! HULK! HULK!",
+                    "agree": "on",
+                    "Pay Method": "Credit Card",
+                    "payment": "Paypal",
+                    "meta": {
+                        "revision": 0,
+                        "created": 1635129892241,
+                        "version": 0
+                    },
+                    "$loki": 15
+                }
+            ],
+            "idIndex": null,
+            "binaryIndices": {},
+            "constraints": null,
+            "uniqueNames": [],
+            "transforms": {},
+            "objType": "bookings",
+            "dirty": false,
+            "cachedIndex": null,
+            "cachedBinaryIndex": null,
+            "cachedData": null,
+            "adaptiveBinaryIndices": true,
+            "transactional": false,
+            "cloneObjects": false,
+            "cloneMethod": "parse-stringify",
+            "asyncListeners": false,
+            "disableMeta": false,
+            "disableChangesApi": true,
+            "disableDeltaChangesApi": true,
+            "autoupdate": false,
+            "serializableIndices": true,
+            "disableFreeze": true,
+            "ttl": null,
+            "maxId": 15,
+            "DynamicViews": [],
+            "events": {
+                "insert": [],
+                "update": [],
+                "pre-insert": [],
+                "pre-update": [],
+                "close": [],
+                "flushbuffer": [],
+                "error": [],
+                "delete": [
+                    null
+                ],
+                "warning": [
+                    null
+                ]
+            },
+            "changes": [],
+            "dirtyIds": []
+        }
+    ],
+    "databaseVersion": 1.5,
+    "engineVersion": 1.5,
+    "autosave": true,
+    "autosaveInterval": 4000,
+    "autosaveHandle": null,
+    "throttledSaves": true,
+    "options": {
+        "autoload": true,
+        "autosave": true,
+        "autosaveInterval": 4000,
+        "serializationMethod": "normal",
+        "destructureDelimiter": "$<\n",
+        "recursiveWait": true,
+        "recursiveWaitLimit": false,
+        "recursiveWaitLimitDuration": 2000,
+        "started": 1635129473856
+    },
+    "persistenceMethod": "fs",
+    "persistenceAdapter": null,
+    "verbose": false,
+    "events": {
+        "init": [
+            null
+        ],
+        "loaded": [],
+        "flushChanges": [],
+        "close": [],
+        "changes": [],
+        "warning": []
+    },
+    "ENV": "NODEJS"
+}

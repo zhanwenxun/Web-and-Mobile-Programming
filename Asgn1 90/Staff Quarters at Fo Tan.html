@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Staff Quarters at Fo Tan</title>
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
+
+  </head>
+
+  <body id="content" bgcolor="#FFFFFF" text="#000000" background="./images/white.jpg" marginwidth="0" marginheight="0">
+
+    <!-- Navigation Bar -->
+    <div class="navbar" id="navbar">
+      <nav class="nav">
+        <a href="#home" class="current">Home</a>
+        <a href="#development">Development</a>
+        <a href="#apartment">Apartment</a>
+        <a href="#facility">Facility</a>
+        <a href="#carpark">Carpark</a>
+        <a href="#management">Management</a>
+        <a href="#address">Address</a>
+      </nav>
+    </div>
+
+    <!-- Home -->
+    <div id="home" class="section" style="margin-top: 45px;">
+      <a href="https://www.hkbu.edu.hk">
+        <img src="./images/campus.jpg" width="100%" height="350px">
+      </a>
+    </div>
+
+    <!-- Development -->
+    <div id="development" class="section">
+      <p class="fontstyle">
+        <img src="./images/development-title.gif" width="254" height="69">
+      </p>
+      <table width="97%" border="0">
+        <tbody>
+          <tr>
+            <td width="10%"></td>
+            <td width="40%" height="248">
+              <img src="./images/development-photo.gif" width="450" height="350">
+            </td>
+            <td width="47%" height="248" class="fontstyle">
+              <ul>
+                <li>Position: Fo Tan, Shatin</li>
+                <li>Build Date: Autumn 1994</li>
+                <li>Construction: 113 units, 8 stroeys for 5 Towers</li>
+                <li>Staff Quarters: Tower 1, 2, 3</li>
+                <li>Civil Servants: Tower 4, 5</li>
+              </ul>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <!-- Apartment -->
+    <div id="apartment" class="section">
+      <img src='./images/sq-apartment.gif' width="374" height="64">
+      <div >
+        <table class="apartment-table">
+          <caption>68 Apartments (Tower 1 - 3)</caption>
+          <tr>
+            <th>Area</th>
+            <th>Bedrooms</th>
+            <th>Number</th>
+          </tr>
+          <tr>
+            <td>100 ㎡</td>
+            <td>2</td>
+            <td>3</td>
+          </tr>
+          <tr>
+            <td>135 ㎡</td>
+            <td>3</td>
+            <td>28</td>
+          </tr>
+          <tr>
+            <td>150 ㎡</td>
+            <td>3</td>
+            <td>30</td>
+          </tr>
+          <tr>
+            <td>170 ㎡</td>
+            <td>4</td>
+            <td>7</td>
+          </tr>
+        </table>
+
+        <div>
+          <canvas id="ApartmentsChart" width="400px" height="500px"></canvas>
+        </div>
+      </div>
+
+      <br/>
+      <table width="100%">
+        <tbody>
+          <tr>
+            <td width="50%">
+              <img src="./images/apartment1.gif" class="left-image">
+            </td>
+            <td width="50%">
+              <img src="./images/apartment2.gif" class="right-image">
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <!-- Facility -->
+    <div id="facility" class="section">
+      <img src="./images/sq-facility.gif" width="374" height="64">
+      <table width="100%" border="0" cellpadding="0">
+        <tbody>
+          <tr class="tr-images">
+            <td width="50%">
+              <img src="./images/swimmingpool.gif" class="left-image">
+            </td>
+            <td width="50%">
+              <img src="./images/common room.gif" class="right-image">
+            </td>
+          </tr>
+          <tr class="tr-titles">
+            <td width="50%" height="27">
+              <div align="center">
+                <img src="./images/fa-swimming pool.gif" class="left-title">
+              </div>
+            </td>
+            <td width="50%" height="27">
+              <div align="center">
+                <img src="./images/fa-common room.gif" class="right-title">
+              </div>
+            </td>
+          </tr>
+
+          <tr class="tr-images">
+            <td width="50%">
+              <img src="./images/squashcourt.gif" class="left-image">
+            </td>
+            <td width="50%">
+              <img src="./images/fitness room.gif" class="right-image">
+            </td>
+          </tr>
+          <tr class="tr-titles">
+            <td width="50%" height="27">
+              <div align="center">
+                <img src="./images/fa-squash court.gif" class="left-title">
+              </div>
+            </td>
+            <td width="50%" height="27">
+              <div align="center">
+                <img src="./images/fa-fittness room.gif" class="right-title">
+              </div>
+            </td>
+          </tr>
+
+          <tr class="tr-images">
+            <td width="50%">
+              <img src="./images/playground.gif" class="left-image">
+            </td>
+            <td width="50%">
+              <img src="./images/tabletennis.gif" class="right-image">
+            </td>
+          </tr>
+          <tr class="tr-titles">
+            <td width="50%" height="27">
+              <div align="center">
+                <img src="./images/playground-title.gif" class="left-title">
+              </div>
+            </td>
+            <td width="50%" height="27">
+              <div align="center">
+                <img src="./images/tennis-title.gif" class="right-title">
+              </div>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <!-- Carpark -->
+    <div id="carpark" class="section"> 
+      <img src="./images/sq-carpark.gif" width="374" height="64">
+      <div style="height: 100vh; width: 90vw">
+        <canvas id="carParking"></canvas>
+      </div>
+
+    </div>
+
+    <!-- Management -->
+    <div id="management" class="section">
+      <p class="fontstyle">
+        <img src="./images/management-title.gif" width="189" height="90">
+      </p>
+      <table width="96%" border="0">
+        <tbdoy>
+          <tr>
+            <td colspan="5">
+              <img src="./images/Management-eo-title.gif" width="443" height="33">
+            </td>
+          </tr>
+          <tr>
+            <td width="1%" height="41">&nbsp;</td>
+            <td colspan="5" class="fontstylebold" height="41">Scope of Services</td>
+          </tr>
+          <tr>
+            <td colspan="3">
+              <ol class="fontstyle">
+                <li>
+                  Supervise the performance of the property management service company.
+                </li>
+                <li>
+                  Manage the move-in and move-out of residents.
+                </li>
+                <li>
+                  Manage and maintain the<b> household facilities</b> (e.g. University provided furniture, household appliances inside the apartment.) For request of any repairs and maintenance works inside the apartment, please fill in and return us the <a href="https://eo.hkbu.edu.hk/ssq1-forms/maint-form.doc" target="_parent">Request for Maintenance/Repair Service Form</a>. 
+                </li>
+                <li>
+                  Handle enquiries and complaints from residents.
+                </li>
+                <li>
+                  Manage the leasing matter.
+                </li>
+              </ol>
+            </td>
+          </tr>
+          <tr>
+            <td width="1%" height="41">&nbsp;</td>
+            <td colspan="5" class="fontstylebold" height="41">Estates Office</td>
+          </tr>
+        </tbdoy>
+      </table>
+
+      <table class="estoff-hours">
+        <caption>Estates Office Hours</caption>
+        <tr>
+          <th>Weekdays</th>
+          <th>Weekends</th>
+          <th>Public Holiday</th>
+        </tr>
+        <tr>
+          <td style="width: 200px">
+            9:00 a.m. - 1:00 p.m.
+            2:00 p.m. - 5:30 p.m.
+          </td>
+          <td>Closed</td>
+          <td>Closed</td>
+        </tr>
+      </table> 
+
+      <br/>
+
+      <table class="est-contact">
+        <caption>Estates Office Contact</caption>
+        <tr>
+          <th>Telephone</th>
+          <th>Fax</th>
+          <th>Mr. Samuel Tam</th>
+          <th>Mr. W.C. Koo</th>
+        </tr>
+        <tr>
+          <td>3411-5660</td>
+          <td>3411-5627</td>
+          <td>3411-7682</td>
+          <td>3411-5650</td>
+        </tr>
+      </table>
+
+      <br/><br/>
+
+      <h3 class="fontstyle">Localtion :</h3>
+      <div id="map2">
+        <iframe 
+          width="650" 
+          height="500" 
+          style="border:0" 
+          loading="lazy" 
+          allowfullscreen src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJx7L-mS8HBDQRIBay7sranbo&key=AIzaSyC-ylaFPs98EtngBY7fbSQTWPqyE5u95Ng">
+        </iframe>
+      </div>
+
+      <h4 class="fontstyle">Room 601, Oen Hall Building, Ho Sin Hang Campus, Hong Kong Baptist University, Kowloon Tong, Kowloon, Hong Kong.</h4>
+
+      <table width="96%" border="0">
+        <br/>
+        <tbody>
+          <tr>
+            <td colspan="5">
+              <img src="./images/Management-property-manger-title.gif" width="378" height="33">
+            </td>
+          </tr>
+          <tr>
+            <td width="1%" height="41">&nbsp;</td>
+            <td colspan="5" class="fontstylebold" height="41">Scope of Services :</td>
+          </tr>
+          <tr>
+            <td colspan="3">
+              <ol class="fontstyle">
+                <li>
+                  Operate a Management Office and a 24 hours security control room.
+                </li>
+                <li>
+                  Provide security, cleaning and landscaping service to the common areas.
+                </li>
+                <li>
+                  Provide repair and maintenance service to the common areas and facilities e.g. swimming pool, lift, fire service system, carpark facility etc.
+                </li>
+                <li>
+                  Handle emergency incident e.g. fire, flooding. lift trap, etc if happened.
+                </li>
+              </ol>
+            </td>
+          </tr>
+          <tr>
+            <td width="1%" height="141">&nbsp;</td>
+            <td class="fontstyle" colspan="3">
+              <p>All staff are <b>not allowed</b> to work for residents privately for a return nor can they receive instructions which may conflict with their normal duties.</p>
+              <p>Should you have any suggestions/requests in related to the management and maintenance of the Staff Quarters, you can express your opinions by filling and returning the <a href="https://eo.hkbu.edu.hk/ssq1-forms/suggestion-form.doc" target="_parent">Suggestion Form</a> or contact the Estates Office directly.</p>
+            </td>
+          </tr>
+        </tbdoy>
+      </table>
+
+      <table width="96%" border="0">
+        <tbody>
+          <tr> 
+            <td width="1%" height="41">&nbsp;&nbsp;&nbsp;&nbsp;</td>
+            <td colspan="4" align="center" valign="middle" class="fontstyle"> 
+              <div align="left" class="fontstylebold">Management Office</div>
+            </td>
+          </tr>
+          <tr>
+            <td width="1%">&nbsp;</td>
+            <td colspan="2" align="center" valign="middle" class="fontstyle" height="23"> 
+              <div align="left">Location :</div>
+            </td>
+            <td class="fontstyle" colspan="2" height="23">Podium Level (1/F) of Tower 
+              1</td>
+          </tr>
+          <tr> 
+            <td width="1%">&nbsp;</td>
+            <td colspan="2" align="center" valign="middle" class="fontstyle" height="20">On-site 
+              Supervisor :</td>
+            <td class="fontstyle" colspan="2" height="20">Mr. Wong</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <table class="manoff-hours">
+        <caption>Management Office Hours</caption>
+        <tr>
+          <th>Weekdays</th>
+          <th>Saturday</th>
+          <th>
+            Sunday & 
+            Public Holiday
+          </th>
+        </tr>
+        <tr>
+          <td style="width: 200px">
+            9:00 a.m. - 1:00 p.m.
+            2:00 p.m. - 5:30 p.m.
+          </td>
+          <td>9:00 a.m. - 12:00 noon</td>
+          <td>Closed</td>
+        </tr>
+      </table> 
+
+      <br/>
+
+      <table class="man-contact">
+        <caption>Management Office Contact</caption>
+        <tr>
+          <th>Telephone</th>
+          <th>Fax</th>
+        </tr>
+        <tr>
+          <td>2688-0465</td>
+          <td>2688-0590</td>
+        </tr>
+      </table>
+
+      <table width="96%" border="0" height="200">
+        <tbody>
+          <tr> 
+            <td width="1%" height="41">&nbsp;&nbsp;</td>
+            <td colspan="4" align="center" valign="middle" class="fontstyle"> 
+              <div align="left" class="fontstylebold">Security Services &amp; 
+              Control Room</div>
+            </td>
+          </tr>
+          <tr> 
+            <td width="1%">&nbsp;</td>
+            <td colspan="2" class="fontstyle"> 
+              <p>24 hours security guards are posted on-site to provide security services 
+                and handle all emergency issues especially during non-office hours.</p>
+              <p>Residents can contact the security-in-charge when in need at the 24 hours 
+                Security Control Room.</p>
+            </td>
+          </tr>
+          <tr>
+            <td width="1%">&nbsp;</td>
+            <td colspan="2" align="center" valign="middle" class="fontstyle" height="23"> 
+              <div align="left">Location :  G/F of Tower 5</div>
+            </td>
+          </tr>
+          <tr> 
+            <td width="1%">&nbsp;</td>
+            <td colspan="2" align="center" valign="middle" class="fontstyle" height="20">Telephone No. :   2688 0473</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <!-- Address -->
+    <div id="address" class="section">
+      <img src="./images/address.gif" width="75" height="70">
+
+      <div id="map1">
+        <iframe 
+          width="650" 
+          height="500" 
+          style="border:0" 
+          loading="lazy" 
+          allowfullscreen src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJAVUvHLUHBDQRrAN5pjPJUTI&key=AIzaSyC-ylaFPs98EtngBY7fbSQTWPqyE5u95Ng">
+        </iframe>
+      </div>
+
+      <h4 class="fontstyle">
+        22 Sui Wo Road, Fo Tan, Shatin, N.T., Hong Kong
+      </h4>
+      <br/>
+      <font color="#FF0000"><b>FLATS FOR LEASE</b></font>
+      <br/><br/>
+      <b>Please contact Mr. W. C. Koo at 3411 5650 for more details.</b>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script type="text/javascript" src="./js/jquery.js"></script>
+    <script type="text/javascript" src="./js/index.js"></script>
+  </body>
+</html>

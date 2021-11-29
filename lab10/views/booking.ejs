@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>All Bookings</title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <%= booking._id %>,
+    <%= booking.name %>, 
+    <%= booking.numTickets %>, 
+    <%= booking.email %>, 
+    <%= booking.team %>, 
+    <%= booking.superhero %>, 
+    <%= booking.message %>
+
+    <!-- <form method="POST" action="/bookings/delete/<%= booking._id %>">
+      <button type="submit">Delete</button>
+    </form> -->
+
+    <button type="button" class="button is-danger" style="background-color: red; color:white" onclick="deleteBooking('<%= booking._id %>')">
+      Delete
+    </button>
+
+    <script>
+      async function deleteBooking(id) {
+        var r = confirm("Confirm Delete?");
+        
+        if (r) {
+            var response = await fetch("/bookings/" + id, {
+                method: "DELETE"
+            });
+
+            if (response.ok) {
+                // var html = await response.text();
+                // alert(html);
+                alert("Booking deleted.");
+                location.assign("/bookings");
+            } else {
+                alert(response.status + ": " + response.statusText);
+            }
+
+        } else {
+            alert("cancelled");
+        }
+    };
+
+    /*
+    Line 3 brings up a confirmation box. If the user clicks the OK, r will become true and we will send the POST request to the server.
+
+    Line 6 uses the Fetch API to generate a new HTTP request. The endpoint specified corresponds to the setting in index.js.
+
+    At line 10, if a record is successfully deleted, the response code is 200, response.ok will handle all Level 200 response codes.
+    
+    Line 11 extracts the text content (the HTML of our bookings page) from the response object
+    */
+    </script>
+  </body>
+</html> 

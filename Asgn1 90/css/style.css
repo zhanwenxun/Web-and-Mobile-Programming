@@ -1,0 +1,167 @@
+html, body {
+      height: 100%;
+      margin: 0;
+      padding: 0;
+}
+
+.fontstyle {  
+      font-family: "Verdana", "Arial", "Helvetica", "sans-serif"; 
+      font-size: 16px; 
+      color: #0033CC; 
+      text-align: justify
+}
+
+.fontstylebold { 
+      font-family: "Verdana", "Arial", "Helvetica", "sans-serif"; 
+      font-size: 16px; 
+      color: #0033CC; 
+      text-align: justify ; 
+      font-weight: bold; 
+      text-decoration: underline
+}
+
+.navbar {
+      height: 45px;
+      width: 100%;
+      background: #00529c;
+      font-family: Verdana;
+
+      justify-content: space-around;
+      flex-wrap: wrap;
+      position: fixed;
+      top: 0;
+}
+
+nav {
+      width: 100%;
+      height: 45px;
+      background-color: #00529c;
+      border-radius: 8px;
+      box-shadow: 0 2px 3px rgba(0, 0, 0, 0.1);
+}
+
+nav a {
+      float: left;
+      font-size: 14px;
+      line-height: 45px;
+      width: 148.5px;
+      height: 45px;
+      color: #fff;
+      text-transform: uppercase;
+      text-decoration: none;
+      text-align: center;
+      z-index: 10;
+      font-weight: bold;
+      display: inline-block;
+}
+
+nav a:hover {
+      color: skyblue;
+      font-size: 18px;
+}
+
+.current {
+      color: skyblue;
+      font-size: 18px;
+}
+
+nav .active {
+      background-color: #00b894;
+}
+
+.table-div {
+      margin: 0 auto;
+}
+
+.apartment-table, .estoff-hours, .est-contact, .manoff-hours, .man-contact
+{
+      margin: 0 auto;
+      border-collapse: collapse;
+}
+
+caption {
+    color: darkmagenta;
+    text-transform: uppercase;
+    font-family: Arial;
+    font-weight: 900;
+    font-size: 20px;
+    margin-bottom: 10px;
+    margin-top: 5px;
+}
+
+.apartment-table th, .estoff-hours th, .est-contact th, .manoff-hours th, .man-contact th
+{
+    background-color: lightsteelblue;
+    width: 150px;
+    height: 40px;
+    border-style: solid;
+    border-width: thin;
+    text-align: center;
+    font-size: 19px;
+}
+
+.apartment-table td, .estoff-hours td, .est-contact td, .manoff-hours td, .man-contact td
+{
+    width: 150px;
+    height: 40px;
+    font-size: 17px;
+    border-style: solid;
+    border-width: thin;
+    border-color: darkgray;
+    text-align: center;
+    vertical-align: center;
+}
+
+.left-image {
+      width: 350px;
+      height: 250px;
+      float: left;
+      margin-left: 200px;
+}
+
+.right-image {
+      width: 350px;
+      height: 250px;
+      float: right;
+      margin-right: 200px;
+}
+
+.left-title {
+      width: 145px;
+      height: 31px;
+      margin-left: 180px;
+}
+
+.right-title {
+      width: 145px;
+      height: 31px;
+      float: right;
+      margin-right: 290px;
+}
+
+p {
+      text-indent: 50px;
+}
+
+@media screen and (max-width: 640px) {
+      .navbar {
+            margin-top: 0; 
+            height: auto;
+      }
+
+      nav {
+            width: auto;
+            height: auto;
+      }
+}
+
+li {
+      margin-bottom: 10px;
+}
+
+#map1, #map2 {
+      margin: 0 auto;
+      border: 1px solid #000;
+      width: 650px;
+      height: 500px;
+}
